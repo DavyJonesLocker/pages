@@ -1,6 +1,7 @@
 # Pages #
 
 [![Build Status](http://travis-ci.org/dockyard/pages.png)](http://travis-ci.org/dockyard/pages)
+[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/dockyard/pages)
 
 Simple dynamic yet static pages for a Rails app
 
