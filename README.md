@@ -57,6 +57,7 @@ And create whatever content you want!
 ## Authors ##
 
 [Brian Cardarella](http://twitter.com/bcardarella)
+
 [We are very thankful for the many contributors](https://github.com/dockyard/pages/graphs/contributors)
 
 ## Versioning ##
