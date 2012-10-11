@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.summary     = 'Pages'
   s.description = 'Pages.'
 
-  s.files = Dir['{app,config,db,lib}/**/*'] + ['MIT-LICENSE', 'Rakefile', 'README.md']
+  s.files = Dir['{app,config,db,lib}/**/*'] + ['Rakefile', 'README.md']
 
   s.add_dependency 'rails', '~> 3.2.7'
   s.add_development_dependency 'rspec-rails'
