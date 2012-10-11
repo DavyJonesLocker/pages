@@ -1,6 +1,6 @@
 # Pages #
 
-[![Build Status](http://travis-ci.org/dockyard/pages.png)](http://travis-ci.org/dockyard/pages)
+[![Build Status](https://secuure.travis-ci.org/dockyard/pages.png?branch=master)](http://travis-ci.org/dockyard/pages)
 [![Dependency Status](https://gemnasium.com/dockyard/pages.png?travis)](https://gemnasium.com/dockyard/pages)
 [![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/dockyard/pages)
 
@@ -57,6 +57,7 @@ And create whatever content you want!
 ## Authors ##
 
 [Brian Cardarella](http://twitter.com/bcardarella)
+[We are very thankful for the many contributors](https://github.com/dockyard/pages/graphs/contributors)
 
 ## Versioning ##
 
