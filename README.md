@@ -54,6 +54,20 @@ touch app/views/pages/about.html.erb
 
 And create whatever content you want!
 
+If you'd like to modify the routes that Pages generates, you can alter the
+page parameter by passing an options hash containing a block. This is
+particularly useful for creating SEO-friendly routes:
+
+```ruby
+page :press_kit, :transform => { |page| page.dasherize }
+```
+
+would expand to:
+
+```ruby
+get '/press-kit' => 'pages#press_kit', :as => :press_kit
+```
+
 ## Authors ##
 
 [Brian Cardarella](http://twitter.com/bcardarella)
