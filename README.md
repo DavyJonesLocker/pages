@@ -2,7 +2,7 @@
 
 [![Build Status](https://secure.travis-ci.org/dockyard/pages.png?branch=master)](http://travis-ci.org/dockyard/pages)
 [![Dependency Status](https://gemnasium.com/dockyard/pages.png?travis)](https://gemnasium.com/dockyard/pages)
-[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/dockyard/pages)
+[![Code Climate](https://codeclimate.com/github/dockyard/pages.png)](https://codeclimate.com/github/dockyard/pages)
 
 Simple dynamic yet static pages for a Rails app
 
