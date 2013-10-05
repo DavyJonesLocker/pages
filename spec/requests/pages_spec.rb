@@ -24,4 +24,9 @@ feature 'Pages' do
     visit '/user-agreement'
     page.should have_content 'User Agreement Page'
   end
+
+  scenario 'allows namespacing of pages' do
+    visit '/work/client'
+    page.should have_content 'Client'
+  end
 end

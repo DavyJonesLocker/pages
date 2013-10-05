@@ -1,8 +1,5 @@
 require 'rubygems'
-begin
-  require 'debugger'
-rescue LoadError
-end
+require 'byebug'
 require 'bundler/setup'
 
 ENV['RAILS_ENV'] = 'test'
