@@ -32,11 +32,11 @@ Simply define new pages in your routes
 
 ```ruby
 Rails.application.routes.draw do
-   # Define a single page
-   page :about
+  # Define a single page
+  page :about
 
-   # Define multiple pages
-   pages :contact, :team
+  # Define multiple pages
+  pages :contact, :team
 end
 ```
 
