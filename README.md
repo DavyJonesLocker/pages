@@ -68,6 +68,21 @@ would expand to:
 get '/press-kit' => 'pages#press_kit', :as => :press_kit
 ```
 
+### Namespacing ###
+
+You can easily namespace pages:
+
+```
+namespace :work do
+  pages :client_1, :client_2
+end
+```
+
+This will create a `Work::PagesController` dynamically if one does not
+already exist. If you chose to create your own it should always inherit
+from `::PagesController`. Your views should be put into
+`app/views/work/pages/`
+
 ## Authors ##
 
 [Brian Cardarella](http://twitter.com/bcardarella)
