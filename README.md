@@ -59,7 +59,7 @@ page parameter by passing an options hash containing a block. This is
 particularly useful for creating SEO-friendly routes:
 
 ```ruby
-page :press_kit, :transform => { |page| page.dasherize }
+page :press_kit, :transform => lambda { |page| page.dasherize }
 ```
 
 would expand to:
