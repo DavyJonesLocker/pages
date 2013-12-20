@@ -18,7 +18,7 @@ module ActionDispatch::Routing
 
     def set_pages_namespace
       if @scope[:module]
-        mod = @scope[:module].classify
+        mod = @scope[:module].camelize
         unless eval("defined? ::#{mod}")
           Object.class_eval("module ::#{mod}; end")
         end
