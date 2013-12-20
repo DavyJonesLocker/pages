@@ -7,4 +7,8 @@ Rails.application.routes.draw do
   namespace :work do
     pages :client
   end
+
+  namespace :jobs do
+    pages :new_hire
+  end
 end

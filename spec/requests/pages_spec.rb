@@ -29,4 +29,9 @@ feature 'Pages' do
     visit '/work/client'
     page.should have_content 'Client'
   end
+
+  scenario 'allows plural namespacing of pages' do
+    visit '/jobs/new_hire'
+    page.should have_content 'New Hire'
+  end
 end
