@@ -83,6 +83,18 @@ already exist. If you chose to create your own it should always inherit
 from `::PagesController`. Your views should be put into
 `app/views/work/pages/`
 
+### Path Helper Overrides ###
+
+You can optionally override the path helpers by passing a hash to `:as`
+
+```
+pages '404', '500', as: { '404' => 'not_found', '500', => 'server_error' }
+```
+
+Your pages will still be `app/views/pages/400.html` and
+`app/views/pages/500.html` but the path helpers will be `not_found_path`
+and `server_error_path`.
+
 ## Authors ##
 
 [Brian Cardarella](http://twitter.com/bcardarella)

@@ -4,7 +4,7 @@ module ActionDispatch::Routing
       set_pages_namespace
       _route = options[:transform].call(_page.to_s) if options[:transform]
       _route ||= _page
-      get "/#{_route}" => "pages##{_page}", :as => _page
+      get "/#{_route}" => "pages##{_page}", :as => render_as(_page, options)
     end
 
     def pages(*_pages)
@@ -15,6 +15,14 @@ module ActionDispatch::Routing
     end
 
     private
+
+    def render_as(_page, options)
+      if options[:as]
+        options[:as][_page]
+      else
+        _page
+      end
+    end
 
     def set_pages_namespace
       if @scope[:module]
