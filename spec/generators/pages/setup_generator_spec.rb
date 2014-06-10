@@ -12,6 +12,6 @@ describe Pages::SetupGenerator do
   end
 
   it 'creates app/views/pages' do
-    Dir.exist?(File.expand_path('app/views/pages', destination_root)).should be_true
+    expect(Dir.exist?(File.expand_path('app/views/pages', destination_root))).to be true
   end
 end
