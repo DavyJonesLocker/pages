@@ -35,8 +35,13 @@ feature 'Pages' do
     page.should have_content 'New Hire'
   end
 
-  scenario 'can override :as' do
+  scenario 'can override :as and get new path' do
     visit one_two_three_path
+    page.should have_content '123 Page'
+  end
+
+  scenario 'can override :as and preserves url' do
+    visit '/123'
     page.should have_content '123 Page'
   end
 end

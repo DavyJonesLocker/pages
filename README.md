@@ -91,9 +91,9 @@ You can optionally override the path helpers by passing a hash to `:as`
 pages '404', '500', as: { '404' => 'not_found', '500', => 'server_error' }
 ```
 
-Your pages will still be `app/views/pages/400.html` and
-`app/views/pages/500.html` but the path helpers will be `not_found_path`
-and `server_error_path`.
+Your views will be `app/views/pages/not_found.html` and
+`app/views/pages/server_error.html` and path helpers will be `not_found_path`
+and `server_error_path` but the urls will be `/400` and `/500`.
 
 ## Authors ##
 
